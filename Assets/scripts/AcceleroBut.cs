@@ -37,7 +37,7 @@ public class AcceleroBut : MonoBehaviour
         motionData.Close();
         */
     }
-    public void Update()
+    public void FixedUpdate()
     {
 
             if (!isRecording) return;
@@ -66,6 +66,7 @@ public class AcceleroBut : MonoBehaviour
     public void makefile()
     {
         attempt += 1;
+        //string dataFile = $"C:\\temp\\gaming{attempt}.csv";
         string dataFile = Path.Combine(Application.persistentDataPath, $"Accelerometer_Data{attempt}.csv");
         StreamWriter streamWriter = new StreamWriter(dataFile, true);
         foreach (var n in data)
