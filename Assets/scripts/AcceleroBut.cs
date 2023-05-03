@@ -6,6 +6,8 @@ using System.IO;
 using TMPro;
 public class AcceleroBut : MonoBehaviour
 {
+
+    public int test = 8;
     StreamWriter motionData;
     public TMP_Text realTimeAccel;
     public TMP_Text buttontext;
